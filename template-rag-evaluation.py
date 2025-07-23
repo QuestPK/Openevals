@@ -20,9 +20,9 @@ from openevals.prompts import (
     RAG_GROUNDEDNESS_PROMPT,
 )
 
-# Load standard or reference document
+# Load standard or reference document (retrieved context)
 with open("path/to/your-standard.json", "r", encoding="utf-8") as f:
-    standard_context = json.load(f)
+    context = json.load(f)
 
 
 
@@ -78,6 +78,6 @@ groundedness_evaluator = create_llm_as_judge(
 )
 
 groundedness_result = groundedness_evaluator(
-    context={"documents": standard_context},
+    context={"documents":context},
     outputs={"answer": "The laboratory must ensure staff responsible for packaging and transport of pathology specimens receive IATA training."},
 )
