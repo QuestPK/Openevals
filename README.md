@@ -1,3 +1,4 @@
+
 # OpenEvals
 
 ## Usage
@@ -6,14 +7,16 @@
 
 ```bash
 pip install openevals
-Set your API key (Anthropic or OpenAI) as environment variables.
+````
 
-Modify input files and examples as needed.
+2. Set your API key (Anthropic or OpenAI) as environment variables.
 
-Run the scripts:
+3. Modify input files and examples as needed.
 
-bash
-Copy
-Edit
+4. Run the scripts:
+
+```bash
 python custom_compliance_evaluator.py
 python builtin_rag_evaluator.py
+```
+
