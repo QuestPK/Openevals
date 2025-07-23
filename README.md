@@ -9,9 +9,9 @@
 pip install openevals
 ````
 
-2. Set your API key (Anthropic or OpenAI) as environment variables.
+2. Set your API key.
 
-3. Modify input files and examples as needed.
+3. Modify input files and examples as per requirement.
 
 4. Run the scripts:
 
